@@ -1,0 +1,13 @@
+# env Secrets and Variables
+.env
+.env.*
+!.env.example
+
+# Node.js dependencies
+node_modules/
+
+# Compiled TypeScript output
+backend/dist/
+
+# log Debug
+npm-debug.log*
