@@ -88,9 +88,9 @@ VITE_API_URL=http://localhost:3000/api
 
 Start the frontend:
 
-powershell
+```powershell
 npm run dev
-
+```
 
 Open the URL displayed in the terminal, usually `http://localhost:5173`.
 
