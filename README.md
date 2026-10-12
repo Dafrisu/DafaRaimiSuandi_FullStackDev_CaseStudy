@@ -15,7 +15,7 @@ Install the following before proceeding:
 Clone the repository and navigate to the project directory:
 
 powershell / gitbash
-git clone <REPOSITORY_URL>
+git clone https://github.com/Dafrisu/DafaRaimiSuandi_FullStackDev_CaseStudy
 cd DafaRaimiSuandi_FullStackDev_CaseStudy
 
 
