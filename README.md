@@ -15,6 +15,7 @@ Install the following before proceeding:
 Clone the repository and navigate to the project directory:
 
 powershell / gitbash
+
 git clone https://github.com/Dafrisu/DafaRaimiSuandi_FullStackDev_CaseStudy
 
 cd DafaRaimiSuandi_FullStackDev_CaseStudy
@@ -25,12 +26,14 @@ cd DafaRaimiSuandi_FullStackDev_CaseStudy
 Create a PostgreSQL database named `field_reports_case_study`:
 
 sql
+
 CREATE DATABASE field_reports_case_study;
 
 
 Connect to the database and execute the schema file from the project root:
 
 powershell
+
 psql -U postgres -d field_reports_case_study -f .\backend\migrations\schema.sql
 
 
@@ -40,11 +43,11 @@ Replace `postgres` with your PostgreSQL username if necessary.
 
 Open a PowerShell terminal in the project root and run:
 
-powershell
+```powershell
 cd backend
 npm install
 Copy-Item .env.example .env
-
+```
 
 Open `backend/.env` and configure your PostgreSQL connection settings:
 
