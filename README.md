@@ -14,28 +14,26 @@ Install the following before proceeding:
 
 Clone the repository and navigate to the project directory:
 
-powershell / gitbash
+```powershell / gitbash
 
 git clone https://github.com/Dafrisu/DafaRaimiSuandi_FullStackDev_CaseStudy
 
 cd DafaRaimiSuandi_FullStackDev_CaseStudy
-
+```
 
 ## 2. Set Up the Database
 
 Create a PostgreSQL database named `field_reports_case_study`:
 
-sql
-
+```sql
 CREATE DATABASE field_reports_case_study;
-
+```
 
 Connect to the database and execute the schema file from the project root:
 
-powershell
-
+```powershell
 psql -U postgres -d field_reports_case_study -f .\backend\migrations\schema.sql
-
+```
 
 Replace `postgres` with your PostgreSQL username if necessary.
 
@@ -50,7 +48,7 @@ Copy-Item .env.example .env
 ```
 
 Open `backend/.env` and configure your PostgreSQL connection settings:
-
+```
 dotenv
 PORT=3000
 DB_HOST=localhost
@@ -58,15 +56,15 @@ DB_PORT=5432
 DB_NAME=field_reports_case_study
 DB_USER=postgres
 DB_PASSWORD=YOUR_POSTGRES_PASSWORD
-
+```
 
 Replace `YOUR_POSTGRES_PASSWORD` with your PostgreSQL password.
 
 Start the backend:
 
-powershell
+```powershell
 npm run dev
-
+```
 
 The API will run at `http://localhost:3000`.
 
@@ -76,11 +74,11 @@ Keep this terminal running.
 
 Open a second PowerShell terminal in the project root:
 
-powershell
+```powershell
 cd frontend
 npm install
 Copy-Item .env.example .env
-
+```
 
 Ensure `frontend/.env` contains:
 
@@ -110,17 +108,17 @@ Try creating a report and changing its status to confirm the application works.
 
 Build the backend:
 
-powershell
+```powershell
 cd backend
 npm run build
-
+```
 
 Build the frontend in a separate terminal:
 
-powershell
+```powershell
 cd frontend
 npm run build
-
+```
 
 ## Notes
 
