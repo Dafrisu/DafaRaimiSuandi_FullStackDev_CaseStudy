@@ -106,18 +106,20 @@ Try creating a report and changing its status to confirm the application works.
 
 ## 6. Production Build (Optional)
 
-Build the backend:
+Build & start the backend:
 
 ```powershell
 cd backend
 npm run build
+npm start
 ```
 
-Build the frontend in a separate terminal:
+Build & preview the frontend in a separate terminal:
 
 ```powershell
 cd frontend
 npm run build
+npm run preview
 ```
 
 ## Notes
