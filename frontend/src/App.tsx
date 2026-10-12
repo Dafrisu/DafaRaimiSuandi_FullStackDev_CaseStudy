@@ -261,7 +261,16 @@ function App() {
                           </button>
                         </div>
                       ) : (
-                        <span className="action-complete">Reviewed</span>
+                        <div className="action-buttons">
+                          <button
+                            className="button button-pending"
+                            onClick={() =>
+                              handleStatusChange(report.id, "pending")
+                            }
+                          >
+                            Mark as Pending
+                          </button>
+                        </div>
                       )}
                     </td>
                   </tr>

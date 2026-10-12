@@ -201,6 +201,16 @@
   background: #fee2e2;
 }
 
+.button-pending {
+  color: #b9a91c;
+  background: #fefef2;
+  border-color: #fefdca;
+}
+
+.button-pending:hover {
+  background: #fefce2;
+}
+
 .empty-state {
   padding: 48px 20px;
   text-align: center;
